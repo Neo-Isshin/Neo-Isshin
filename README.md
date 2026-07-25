@@ -2,8 +2,6 @@
 
 # Hi, I'm Neo
 
-### **My GOD is in the rain**
-
 ### Building local-first AI tooling that keeps your work, memory, and data under your control.
 
 I build tools for people who work across multiple AI agents and want the results to remain useful after a session ends.
