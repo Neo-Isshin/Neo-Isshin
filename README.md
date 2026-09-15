@@ -6,39 +6,41 @@
 
 I build tools for people who work across multiple AI agents and want the results to remain useful after a session ends.
 
-[![Open Nova](https://img.shields.io/badge/Flagship-Open%20Nova-0B1F4D?style=for-the-badge)](https://github.com/Neo-Isshin/open-nova)
+[![Homepage](https://img.shields.io/badge/Home-ailyre.com-bb8749?style=for-the-badge)](https://www.ailyre.com/)
+[![Actanara](https://img.shields.io/badge/Flagship-Actanara-0B1F4D?style=for-the-badge)](https://github.com/Neo-Isshin/actanara)
 [![TokenClock](https://img.shields.io/badge/Project-TokenClock-00A6D6?style=for-the-badge)](https://github.com/Neo-Isshin/TokenClock)
+[![MuxLM](https://img.shields.io/badge/Project-MuxLM-516D9A?style=for-the-badge)](https://github.com/Neo-Isshin/MuxLM)
+
+[![X](https://img.shields.io/badge/X-coming_soon-273b64?style=flat-square&logo=x)](https://x.com/)
+[![WeChat](https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-coming_soon-07c160?style=flat-square&logo=wechat)](#)
 
 </div>
 
 ---
 
-## Open Nova — shared memory for your AI work
+## Actanara — shared memory for your AI work
 
 <p align="center">
-  <a href="https://github.com/Neo-Isshin/open-nova">
-    <img src="https://raw.githubusercontent.com/Neo-Isshin/open-nova/main/docs/assets/banner.png" alt="Open Nova" width="760">
+  <a href="https://github.com/Neo-Isshin/actanara">
+    <img src="https://raw.githubusercontent.com/Neo-Isshin/actanara/main/docs/assets/banner.png" alt="Actanara" width="760">
   </a>
 </p>
 
-**Your agents do valuable work. Open Nova makes sure that work does not disappear with the session.**
+**Your agents do valuable work. Actanara makes sure that work does not disappear with the session.**
 
-[Open Nova](https://github.com/Neo-Isshin/open-nova) is a structured, local-first AI asset operations system. It brings activity from Codex, Claude Code, Gemini CLI, OpenClaw, and Hermes into one durable layer, then turns it into:
+[Actanara](https://github.com/Neo-Isshin/actanara) *(formerly Open Nova)* is a structured, local-first AI asset operations system. It consolidates sessions, tasks, and evidence from Codex, Claude Code, Gemini CLI, OpenClaw, Hermes, OpenCode, Antigravity, and Cursor into one durable local layer, then turns them into:
 
-- daily, weekly, and monthly work narratives;
-- a reviewable task graph grounded in real execution evidence;
-- reusable learning assets and technical records;
-- shared, searchable memory through a read-only RAG boundary;
-- a local Dashboard for understanding work across agent runtimes.
+- **shared memory across agents** — work done in Claude Code can be found and reused from Codex through a restricted read-only retrieval boundary (`nova-RAG` with a local lexical fallback);
+- **a graph of work that actually happened** — `Nova-Task` derives tasks, status, and evidence from conversations, file changes, and tool results, not just manually written tickets;
+- **automatic work narratives** — daily, weekly, and monthly reports that turn fragmented sessions into durable progress;
+- **a local source of truth** — sessions, usage, generated assets, and task evidence stay in user-controlled storage with explicit integration boundaries.
 
-The deterministic parts handle collection, parsing, attribution, persistence, and security boundaries. LLMs help with summarization, task extraction, and knowledge organization. Your runtime data and generated assets remain under your control.
+Parser-first processing normalizes everything before any LLM sees it; your runtime data and generated assets remain under your control.
 
 <p align="center">
-  <a href="https://github.com/Neo-Isshin/open-nova"><b>Repository</b></a>
+  <a href="https://github.com/Neo-Isshin/actanara"><b>Repository</b></a>
   &nbsp;·&nbsp;
-  <a href="https://neo-isshin.github.io/open-nova/"><b>Website</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://neo-isshin.github.io/open-nova/dashboard-demo/"><b>Interactive Dashboard Demo</b></a>
+  <a href="https://neo-isshin.github.io/actanara/"><b>Website</b></a>
 </p>
 
 ---
@@ -53,9 +55,9 @@ The deterministic parts handle collection, parsing, attribution, persistence, an
       </a>
     </td>
     <td width="62%" valign="middle">
-      <b>One living dial for 14 AI coding tools.</b>
+      <b>One living dial for your AI coding tools.</b>
       <br><br>
-      TokenClock reads local usage logs from Claude Code, Codex, Gemini CLI, OpenCode, and more, then turns them into an always-visible view of tokens, messages, active tools, and per-session usage.
+      TokenClock reads local usage logs from Claude Code, Codex, Gemini CLI, OpenCode, and more, then turns them into an always-visible Liquid Glass view of tokens, messages, active tools, and per-session usage — broken down into sessions, models, and tools.
       <br><br>
       Local-only · zero upload · native Liquid Glass on macOS 26+.
       <br><br>
@@ -63,6 +65,32 @@ The deterministic parts handle collection, parsing, attribution, persistence, an
     </td>
   </tr>
 </table>
+
+---
+
+## MuxLM — any provider, one short command
+
+> Switch between providers and models in Codex, Claude Code, and OpenCode — without editing config files or scattering API keys.
+
+```bash
+cdx glm52    # Codex with GLM 5.2
+cld k3       # Claude Code with Kimi K3
+opc ds       # OpenCode with DeepSeek
+```
+
+One binary, three entry points (`cdx` / `cld` / `opc`). MuxLM is a lightweight **switcher, not a proxy**: the underlying CLI connects directly to your chosen provider, the launch config stays isolated from your global one, and nothing is left behind.
+
+<p align="center">
+  <a href="https://github.com/Neo-Isshin/MuxLM"><b>Explore MuxLM →</b></a>
+</p>
+
+---
+
+## Ailyre — a personal corner of the internet
+
+When I'm not building tools, I keep a small personal space at [**ailyre.com**](https://www.ailyre.com/) — a quiet homepage with an interactive lyre, an AI-news digest you can subscribe to, and room for curiosity to grow.
+
+*保持好奇，自在生长。* (Stay curious, grow at ease.)
 
 ---
 
